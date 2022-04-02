@@ -1,0 +1,32 @@
+h1 {
+    width: 65px;
+    color: orange;
+    font-family: sans-serif;
+    text-decoration: underline;
+}
+ul {
+    background-color: aqua;
+    line-height: 50px;
+    text-align: center;
+    font-style: italic;
+
+}
+.anotherclass {
+    background-color: red;
+}
+p {
+    font-weight: 600;
+    font-size: 3em;
+}
+body {
+    font-size: 16px;
+}
+#yellow {
+    background-color: yellow;
+}
+#red {
+    background-color: red;
+}
+#brown {
+    background-color: brown;
+}
