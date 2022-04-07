@@ -1,8 +1,10 @@
 // 1-
+//DM
 const a = 2;
 const b = 3;
 console.log("1-"," a+b ", a+b, " a - b ", a-b, " a * b ", a*b , " a / b ", a/b, " a % b ", a%b)
 // 2- 
+//DM
 if (a > b){
     console.log("2- " + a + " maior que " + b);
 } else if (b > a){
@@ -11,11 +13,13 @@ if (a > b){
     console.log("2- " + a + " é igual a " + b);
 }
 // 3-
+//DM
 const c = 4;
 let array = [a,b,c]
 let anotherArray = array.sort();
 console.log( "3- array = " +array+ " Maior numero: " + anotherArray[anotherArray.length - 1])
 // 4-
+//DM
 if (a > 0) {
     console.log("4- " + "positive");
 } else if (a < 0) {
@@ -24,6 +28,7 @@ if (a > 0) {
     console.log("4- " + "zero");
 }
 // 5- 
+//DM
 const a1 = 50;
 const a2 = 50;
 const a3 = 80;
@@ -37,6 +42,7 @@ if (a1 <= 0 || a2 <= 0 || a3 <= 0){
     }
 }
 // 6-
+//DM
 let partName = "bispo"
 switch(partName.toLowerCase()) {
     case "peão":
@@ -62,6 +68,7 @@ switch(partName.toLowerCase()) {
       break;
 }   
 // 7-
+//DM
 let percent = 100
 if ( percent > 100 || percent < 0) {
     console.log("7- " + "error!")
@@ -86,6 +93,7 @@ if ( percent > 100 || percent < 0) {
   
 }
 // 8-
+//DM
 const num1 = 1;
 const num2 = 2;
 const num3 = 3;
@@ -95,13 +103,14 @@ if (num1 % 2 == 0 || num2 % 2 == 0 || num3 % 2 == 0){
     console.log("8- " + "false")
 }
 // 9-
-
+//DM
 if ((num1 % 2) != 0 || (num2 % 2) != 0 || (num3 % 2) != 0){
     console.log("8- " + "true")
 } else {
     console.log("8- " + "false")
 }
 // 10-
+//DM
 const productCost = 5;
 const productSalePrice = 10;
 const productSales = 1000;  
@@ -115,6 +124,7 @@ if (productCost < 0 || productSalePrice < 0) {
     console.log("10- " + totalProfit)
 }
 // 11-
+//DM
 let grossSalary = 1500;
 let netSalary;
 let baseSalary;
