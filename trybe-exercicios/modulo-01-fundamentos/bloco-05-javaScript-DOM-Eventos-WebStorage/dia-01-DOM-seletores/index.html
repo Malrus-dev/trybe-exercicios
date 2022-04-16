@@ -42,6 +42,19 @@
       </section>
     </main>
     <script>
+        changeTextTP();
+        function changeTextTP() {
+            let paragraphs = document.getElementsByTagName("p");
+            let cont = 0;
+            let array = ["Daqui a dois anos me vejo já bem estabelecido como um profissional de tecnologia. ", "Como eu estou aberto a estudar em qualquer área, eu posso estar em qualquer lugar,","e espero já ter concluído com alguns de meus projetos pessoais."];
+            for(let num of paragraphs) {            
+                num.innerText = array[cont];
+                cont += 1;
+            }
+        }
+
+
+
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
