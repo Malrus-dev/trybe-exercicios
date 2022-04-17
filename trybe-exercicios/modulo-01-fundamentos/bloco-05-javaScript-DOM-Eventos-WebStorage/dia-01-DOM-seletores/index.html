@@ -68,6 +68,15 @@
           let textTitle = document.getElementsByClassName("title")[0];
           textTitle.innerText = "Exercício 5.1 - JavaScript";
         }
+        changeTextCase();
+        function changeTextCase() {
+          let paragraphs = document.getElementsByTagName("p");
+          let array = [];
+          for (let num of paragraphs){
+            num.style.textTransform = "uppercase";
+          }
+          
+        }
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
