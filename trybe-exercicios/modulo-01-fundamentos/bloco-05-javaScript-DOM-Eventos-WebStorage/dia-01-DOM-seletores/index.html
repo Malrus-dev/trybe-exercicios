@@ -53,19 +53,21 @@
             }
         }
         changeColorSquare1();
-        function changeColorSquare1(){
+        function changeColorSquare1() {
             let SideSquares = document.getElementsByClassName("main-content")[0];
             console.log(SideSquares);
             SideSquares.style.backgroundColor = 'rgb(76,164,109)';
         }
         changeColorSection();
-        function changeColorSection(){
+        function changeColorSection() {
           let sectionBox = document.getElementsByClassName("center-content")[0];
           sectionBox.style.backgroundColor = 'white';
-
         }
-
-
+        changeTextTitle();
+        function changeTextTitle() {
+          let textTitle = document.getElementsByClassName("title")[0];
+          textTitle.innerText = "Exercício 5.1 - JavaScript";
+        }
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
