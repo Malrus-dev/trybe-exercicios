@@ -11,7 +11,6 @@ function changeTextTP() {
 changeColorSquare1();
 function changeColorSquare1() {
     let SideSquares = document.getElementsByClassName("main-content")[0];
-    console.log(SideSquares);
     SideSquares.style.backgroundColor = 'rgb(76,164,109)';
 }
 changeColorSection();
@@ -32,6 +31,14 @@ function changeTextCase() {
     num.style.textTransform = "uppercase";
   }
   
+}
+printInConsole();
+function printInConsole() { 
+    let paragraphs = document.getElementsByTagName("p");
+    for (let num of paragraphs){
+        console.log(num.innerHTML);
+    }
+    
 }
 /*
 Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
