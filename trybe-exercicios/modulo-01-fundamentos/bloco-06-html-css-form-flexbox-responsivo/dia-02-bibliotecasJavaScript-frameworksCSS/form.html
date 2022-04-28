@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body class="bg-success">
+    <header class="container">
+        <h1 class="text-center my-4 pt-4">Viaje com a Trybe!</h1>
+    </header>
+    <main>        
+        <div class="container bg-secondary">
+            <form action="" method="post">
+                <label for="form-name" class="form-label">Nome:</label>
+                <input type="text" name="" id="form-name" class="form-control take-value" required>
+                <label for="form-email" class="form-label">Email:</label>
+                <input type="email" id="form-email" class="form-control take-value" required> 
+                <div class="container my-3">
+                    <p class="">Destino Preferido:</p>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" id="form-radio-city" name="form-radio-pd" value="city" class="form-check-input take-value" required>
+                        <label for="form-radio-city" class="form-check-label">Cidade</label> 
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" id="form-radio-field" name="form-radio-pd" value="field" class="form-check-input take-value" required>
+                        <label for="form-radio-field" class="form-check-label">Campo</label> 
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" id="form-radio-beach" name="form-radio-pd" value="beach" class="form-check-input take-value" required>
+                        <label for="form-radio-beach" class="form-check-label">Praia</label> 
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" id="form-radio-mountain" name="form-radio-pd" value="mountains" class="form-check-input take-value" required>
+                        <label for="form-radio-mountain" class="form-check-label">Montanhas</label> 
+                    </div>
+                </div>  
+                <label for="form-textarea" class="container form-label">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+                <textarea name="" id="form-textarea" maxlength="500" cols="30" rows="10" class="form-control take-value" required></textarea>
+                <p class="container">Qual a melhor data para realizar sua viagem?</p>
+                <div class="container">
+                    <label for="form-date" class="form-label">Data:</label>
+                    <input type="date" id="form-date" class="take-value" required>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="form-ckb-tc" class="form-check-input take-value">
+                    <label for="form-ckb-tc" class="form-label">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="form-ckb-cp" class="form-check-input take-value">
+                    <label for="form-ckb-cp" class="form-label">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+                </div>
+                <div class="container mt-3 mb-5 pb-3">
+                    <button type="submit" id="btn-sbmt-ftt" class="btn btn-success me-5">Enviar</button>
+                    <button type="button" id="btn-clear-ftt" class="btn btn-danger ms-5">Limpar Tudo!</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+    <footer class="container">
+        <p class="text-center">Desenvolvido por Mael Sobrinho Fernandes, estudante da Trybe de desenvolvedor Web</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
