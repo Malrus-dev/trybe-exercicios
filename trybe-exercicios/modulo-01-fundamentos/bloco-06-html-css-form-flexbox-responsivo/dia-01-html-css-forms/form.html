@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Viaje com a Trybe!</h1>
+    </header>
+    <main>        
+        <div class="container">
+            <form action="" method="post">
+                <label for="form-name" class="content">Nome:</label>
+                <input type="text" name="" id="form-name" class="content c-maxw form-value">
+                <label for="form-email" class="content">Email:</label>
+                <input type="email" id="form-email" class="content c-maxw form-value"> 
+                <p class="content c-disbk">Destino Preferido:</p>
+                <div class="content c-disbk">
+                <input type="radio" id="form-radio-city" name="form-radio-pd" value="city" class="content form-value">
+                <label for="form-radio-city">Cidade</label> 
+                <input type="radio" id="form-radio-field" name="form-radio-pd" value="field" class="content form-value">
+                <label for="form-radio-field">Campo</label> 
+                <input type="radio" id="form-radio-beach" name="form-radio-pd" value="beach" class="content form-value">
+                <label for="form-radio-beach">Praia</label> 
+                <input type="radio" id="form-radio-mountain" name="form-radio-pd" value="mountains" class="content form-value">
+                <label for="form-radio-mountain">Montanhas</label> 
+                </div>
+                <label for="form-textarea" class="content c-maxw c-disbk">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+                <textarea name="" id="form-textarea" cols="30" rows="10" class="content c-maxw form-value"></textarea>
+                <p class="content c-disbk">Qual a melhor data para realizar sua viagem?</p>
+                <div class="content c-disbk">
+                    <label for="form-date" class="content">Data:</label>
+                    <input type="date" id="form-date" class="content form-value">
+                </div>
+                <div class="content c-disbk">
+                    <input type="checkbox" id="form-ckb-tc" class="content form-value">
+                    <label for="form-ckb-tc" class="content">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+                </div>
+                <div class="content c-disbk">
+                <input type="checkbox" id="form-ckb-cp" class="content form-value">
+                <label for="form-ckb-cp" class="content">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+                </div>
+                <button type="submit" id="btn-sbmt-ftt" class="content">Enviar</button>
+                <button id="btn-clear-ftt" class="content">Limpar Tudo!</button>
+            </form>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
