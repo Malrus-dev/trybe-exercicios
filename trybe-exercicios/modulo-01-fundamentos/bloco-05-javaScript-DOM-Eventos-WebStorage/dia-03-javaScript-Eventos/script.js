@@ -24,9 +24,8 @@ window.onload = function () {
     createTask("programar");
     legend("green");
     divsWithSelect();
-
+    daysColor();
 }
-
 function createDays() {
     const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
     const father = document.getElementById("days");
@@ -106,16 +105,29 @@ function legend(cor){
     element.classList.add("task");
     element.style.backgroundColor = cor;
     document.getElementsByClassName("my-tasks")[0].appendChild(element);
-
 }
 function divsWithSelect(){
     let divs = document.getElementsByClassName("task");
     for(let num of divs){
         num.addEventListener("click", selectItem);
     }
-
 }
 function selectItem(event){
     event.target.classList.toggle("selected")
-
+}
+function daysColor(){
+    let days = document.getElementsByClassName("day");
+    for(let day of days){
+        day.addEventListener("click", changeColor);
+    }
+}
+function changeColor(event){
+    if (document.getElementsByClassName("selected").length != 0){
+        let colorTask = document.getElementsByClassName("selected")[0].style.backgroundColor;
+        if(event.target.style.color === colorTask){
+            event.target.style.color = "rgb(119,119,119)";
+        } else {
+            event.target.style.color = colorTask;
+        }
+    }  
 }
