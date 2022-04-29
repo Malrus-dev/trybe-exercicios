@@ -18,6 +18,7 @@ window.onload = function () {
     createDays();
     createButton("Feriados");
     addFunction();
+    itsFriday("Sexta-feira");
 
 }
 
@@ -54,8 +55,12 @@ function holidays(){
             hols[i].style.backgroundColor = "rgb(238,238,238)";
         }else {
             hols[i].style.backgroundColor = "red";
-        }
-        
+        }        
     }
-
+}
+function itsFriday(name){
+    let element = document.createElement("button");
+    element.id = "btn-friday";
+    element.innerText = name;
+    document.getElementsByClassName("buttons-container")[0].appendChild(element);
 }
