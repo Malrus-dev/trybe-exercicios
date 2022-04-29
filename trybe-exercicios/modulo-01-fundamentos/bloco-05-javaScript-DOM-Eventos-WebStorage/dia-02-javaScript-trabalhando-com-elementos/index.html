@@ -57,14 +57,19 @@
   </head>
   <body>
     <script>
-        window.onload = function () {
-            
-            
+        //function
+        function elementCreator(tagName){
+            const elemento = document.createElement(tagName);
+            return elemento;
         }
-        const elemento = document.createElement("h1");
-        const bodyVar = document.getElementsByTagName("body");
+        //1
+        const elemento = elementCreator("h1");
         elemento.innerText = "Exercício 5.2 - JavaScript DOM";
         document.body.appendChild(elemento);
+        //2
+        const elemento2 = elementCreator("main");
+        elemento2.classList.add("main-content");
+        document.body.appendChild(elemento2);
     </script>
   </body>
 </html>
