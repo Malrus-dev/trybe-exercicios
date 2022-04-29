@@ -108,7 +108,11 @@
         ///////////////////////////////////////
         //1
         document.getElementsByTagName("h1")[0].classList.add("title");
-        
+        //2
+        let hs3 = document.getElementsByTagName("h3");
+        for (let i = 0; i < hs3.length; i += 1){
+            hs3[i].classList.add("description");
+        }
     </script>
   </body>
 </html>
