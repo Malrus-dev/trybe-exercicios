@@ -18,7 +18,8 @@ window.onload = function () {
     createDays();
     createButton("Feriados");
     addFunction();
-    itsFriday("Sexta-feira");
+    fridayBtn("Sexta-feira");
+    activateBtn();
 
 }
 
@@ -58,9 +59,23 @@ function holidays(){
         }        
     }
 }
-function itsFriday(name){
+function fridayBtn(name){
     let element = document.createElement("button");
     element.id = "btn-friday";
     element.innerText = name;
     document.getElementsByClassName("buttons-container")[0].appendChild(element);
+}
+function activateBtn(){
+    document.getElementById("btn-friday").addEventListener("click", fridays);
+}
+function fridays(){
+    let fris = document.getElementsByClassName("friday");
+    let arrayF = [4,11,18,25];
+    for (let i = 0; i < fris.length; i += 1){
+        if (fris[i].innerText === "Sexta-feira"){
+            fris[i].innerText = arrayF[i];
+        }else {
+            fris[i].innerText = "Sexta-feira";
+        }        
+    }
 }
