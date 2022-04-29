@@ -22,6 +22,7 @@ window.onload = function () {
     activateBtn();
     zoomDays();
     createTask("programar");
+    legend("green");
 
 }
 
@@ -97,6 +98,12 @@ function zoomOut(event){
 function createTask(name){
     let element = document.createElement("span");
     element.innerText = name;
+    document.getElementsByClassName("my-tasks")[0].appendChild(element);
+}
+function legend(cor){
+    let element = document.createElement("div");
+    element.classList.add("task");
+    element.style.backgroundColor = cor;
     document.getElementsByClassName("my-tasks")[0].appendChild(element);
 
 }
