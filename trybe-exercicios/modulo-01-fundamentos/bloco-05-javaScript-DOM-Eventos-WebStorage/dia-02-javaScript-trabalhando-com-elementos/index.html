@@ -70,6 +70,10 @@
         const elemento2 = elementCreator("main");
         elemento2.classList.add("main-content");
         document.body.appendChild(elemento2);
+        //3
+        const elemento3 = elementCreator("section");
+        elemento3.classList.add("center-content");
+        document.getElementsByTagName("main")[0].appendChild(elemento3);
     </script>
   </body>
 </html>
