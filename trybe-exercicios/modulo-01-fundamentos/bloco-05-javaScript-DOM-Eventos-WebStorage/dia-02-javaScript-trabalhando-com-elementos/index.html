@@ -63,34 +63,43 @@
             return elemento;
         }
         //1
-        const elemento = elementCreator("h1");
+        let elemento = elementCreator("h1");
         elemento.innerText = "Exercício 5.2 - JavaScript DOM";
         document.body.appendChild(elemento);
         //2
-        const elemento2 = elementCreator("main");
-        elemento2.classList.add("main-content");
-        document.body.appendChild(elemento2);
+        elemento = elementCreator("main");
+        elemento.classList.add("main-content");
+        document.body.appendChild(elemento);
         //3
-        const elemento3 = elementCreator("section");
-        elemento3.classList.add("center-content");
-        document.getElementsByTagName("main")[0].appendChild(elemento3);
+        elemento = elementCreator("section");
+        elemento.classList.add("center-content");
+        document.getElementsByTagName("main")[0].appendChild(elemento);
         //4
-        const elemento4 = elementCreator("p");
-        elemento4.innerText = "Barabam!";
-        document.getElementsByTagName("section")[0].appendChild(elemento4);
+        elemento = elementCreator("p");
+        elemento.innerText = "Barabam!";
+        document.getElementsByTagName("section")[0].appendChild(elemento);
         //5
-        const elemento5 = elementCreator("section");
-        elemento5.classList.add("left-content");
-        document.getElementsByTagName("main")[0].appendChild(elemento5);
+        elemento = elementCreator("section");
+        elemento.classList.add("left-content");
+        document.getElementsByTagName("main")[0].appendChild(elemento);
         //6
-        const elemento6 = elementCreator("section");
-        elemento6.classList.add("right-content");
-        document.getElementsByTagName("main")[0].appendChild(elemento6);
+        elemento = elementCreator("section");
+        elemento.classList.add("right-content");
+        document.getElementsByTagName("main")[0].appendChild(elemento);
         //7
-        const elemento7 = elementCreator("img");
-        elemento7.src = "https://picsum.photos/200";
-        elemento7.classList.add("small-image");
-        document.getElementsByClassName("left-content")[0].appendChild(elemento7);
+        elemento = elementCreator("img");
+        elemento.src = "https://picsum.photos/200";
+        elemento.classList.add("small-image");
+        document.getElementsByClassName("left-content")[0].appendChild(elemento);
+        //8
+        let numbers = ["um","dois","três","quatro","cinco","seis","sete","oito","nove","dez"]
+        elemento = elementCreator("ul");
+        for (let i = 0; i < 10; i += 1){
+            let elementoChild = elementCreator("li");
+            elementoChild.innerText = numbers[i];
+            elemento.appendChild(elementoChild);
+        }
+        document.getElementsByClassName("right-content")[0].appendChild(elemento);
     </script>
   </body>
 </html>
