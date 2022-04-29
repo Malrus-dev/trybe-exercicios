@@ -25,6 +25,7 @@ window.onload = function () {
     legend("green");
     divsWithSelect();
     daysColor();
+    activateBtn2();
 }
 function createDays() {
     const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
@@ -130,4 +131,23 @@ function changeColor(event){
             event.target.style.color = colorTask;
         }
     }  
+}
+function activateBtn2(){
+    let btn = document.getElementById("btn-add");
+    let inputElement = document.getElementById("task-input");
+    btn.addEventListener("click", addCommitment);
+    inputElement.addEventListener("keyup", addCommitment);
+}
+function addCommitment(event){
+    let inputElement = document.getElementById("task-input");
+    let commitment = document.getElementsByTagName("h3")[1];
+    let newElement = document.createElement("p");
+    if (event.key === "Enter" || event.type === "click"){
+        if(inputElement.value === ""){
+            alert("O campo não pode estar vazio!")
+        }else{
+            newElement.innerText = inputElement.value;
+            commitment.appendChild(newElement);
+        }
+    } 
 }
