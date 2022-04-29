@@ -271,7 +271,7 @@ td td{
 }
 .ltr{
     direction:ltr;
-    unicode-bidi:embed
+    unicode-bidi:embed;
 }
 @media screen and (max-width:1280px){#bannerL{display:none}#bannerR{display:none}}@media screen and (max-width:980px){#Inner{width:100%}}@media screen and (max-width:480px){h1{font-size:64px}#Panes>div{width:94%;clear:both;float:none}#Panes>div:nth-of-type(odd){float:none;margin:0 3%}#Panes>div:nth-of-type(even){float:none;margin:0 3%}#Panes>br{display:none}}
 @media screen and (max-width:350px){#Inner{width:320px}h1{font-size:58px}}

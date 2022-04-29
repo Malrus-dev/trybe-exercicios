@@ -1,0 +1,9 @@
+header{
+    background-color: green;
+}
+.container{
+    display: inline-block;
+    white-space: nowrap;
+    margin: 5px 20px;
+}
+
