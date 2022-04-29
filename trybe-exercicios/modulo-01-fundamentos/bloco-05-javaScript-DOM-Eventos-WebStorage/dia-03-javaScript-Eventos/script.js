@@ -23,6 +23,7 @@ window.onload = function () {
     zoomDays();
     createTask("programar");
     legend("green");
+    divsWithSelect();
 
 }
 
@@ -105,5 +106,16 @@ function legend(cor){
     element.classList.add("task");
     element.style.backgroundColor = cor;
     document.getElementsByClassName("my-tasks")[0].appendChild(element);
+
+}
+function divsWithSelect(){
+    let divs = document.getElementsByClassName("task");
+    for(let num of divs){
+        num.addEventListener("click", selectItem);
+    }
+
+}
+function selectItem(event){
+    event.target.classList.toggle("selected")
 
 }
