@@ -31,3 +31,11 @@ function createDays() {
         father.appendChild(child);
     }
 }
+createButton("Feriados");
+function createButton(name){
+    let element = document.createElement("button");
+    element.id = "btn-holiday";
+    element.innerText = name;
+    document.getElementsByClassName("buttons-container")[0].appendChild(element);
+
+}
