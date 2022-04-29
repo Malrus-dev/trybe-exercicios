@@ -21,6 +21,7 @@ window.onload = function () {
     fridayBtn("Sexta-feira");
     activateBtn();
     zoomDays();
+    createTask("programar");
 
 }
 
@@ -92,4 +93,10 @@ function zoomIn(event){
 }
 function zoomOut(event){
     event.target.style.fontSize = "20px";
+}
+function createTask(name){
+    let element = document.createElement("span");
+    element.innerText = name;
+    document.getElementsByClassName("my-tasks")[0].appendChild(element);
+
 }
