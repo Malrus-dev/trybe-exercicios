@@ -20,6 +20,7 @@ window.onload = function () {
     addFunction();
     fridayBtn("Sexta-feira");
     activateBtn();
+    zoomDays();
 
 }
 
@@ -78,4 +79,17 @@ function fridays(){
             fris[i].innerText = "Sexta-feira";
         }        
     }
+}
+function zoomDays(){
+    let days = document.getElementsByClassName("day");
+    for(let i = 0; i < days.length; i += 1){    
+        days[i].addEventListener("mouseover", zoomIn);
+        days[i].addEventListener("mouseout", zoomOut);
+    }    
+}
+function zoomIn(event){
+    event.target.style.fontSize = "30px";
+}
+function zoomOut(event){
+    event.target.style.fontSize = "20px";
 }
