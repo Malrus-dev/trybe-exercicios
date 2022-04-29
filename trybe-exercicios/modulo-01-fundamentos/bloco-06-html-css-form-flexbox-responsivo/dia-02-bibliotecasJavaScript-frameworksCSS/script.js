@@ -5,6 +5,7 @@ window.onload = startPage;
 function startPage(){
     btnSbmtFtt.addEventListener("click", postForm);
     btnClearFtt.addEventListener("click", clearForm); 
+    const validate = new window.JustValidate('#form');
     document.getElementById('form-date').DatePickerX.init();
 }
 function postForm(event){
