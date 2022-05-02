@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{    
+    background-color: green;
+    font-size: 15px;   
+    
+}
+h1{
+    margin-top: 40px;  
+    text-align: center;
+
+}
+main{
+    background-color: rgb(0, 163, 0)
+
+
+}
+.container{
+    margin: 20px 50px;
+    background-color: rgb(0, 163, 0);
+}
+.content{
+    margin: 5px;
+    padding: 5px;    
+}
+.c-disbk{
+    display: block;
+}
+.c-disinbk{
+    display: inline-block;
+}
+.c-maxw{
+    width: 98%;
+}
+.mrgn-auto{
+    margin: auto;
+}
+.mrgn-5p{
+    margin: 5px;
+}
+.mrgn-100p-right{
+    margin-right: 100px;
+}
+footer{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 12px;
+}
