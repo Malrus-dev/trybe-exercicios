@@ -11,6 +11,9 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 
 }
 
@@ -50,4 +53,40 @@ figure {
 
 figcaption {
   font-size: .8em;
+}
+
+#thisDiv {
+  padding: 20px;
+}
+
+@media screen and (min-width: 800px){
+  body {
+    background-color: green;
+  }  
+
+  h1 {
+    font-size: 2.0em;
+  }
+  
+  p {
+    font-size: 1.0em;
+  }
+  
+  #thisDiv {
+    padding: 40px;
+  }
+
+  figure{
+    max-width: 45%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
